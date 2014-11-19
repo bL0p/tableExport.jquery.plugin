@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Test tableExport</title>
+<style type="text/css">
+  .code{
+    font-family: monospace;
+  }
+</style>
+</head>
+<body>
+<h2>Table with <span class="code">thead</span> and <span class="code">tbody</span></h2>
+  <table id="test-table" border="1">
+    <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Row 1 Col 1</td>
+      <td>Row 1 Col 2</td>
+      <td>Row 1 Col 3</td>
+    </tr>
+    <tr>
+      <td>Row 2 Col 1</td>
+      <td>Row 2 Col 2</td>
+      <td>Row 3 Col 3</td>
+    </tr>
+    <tr>
+      <td>Row 3 Col 1</td>
+      <td>Row 3 Col 2</td>
+      <td>Row 3 Col 3</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div>
+    <button onclick="$('#test-table').tableExport({type:'csv', escape:'false'})">Export to CSV</button>
+    <button onclick="$('#test-table').tableExport({type:'excel', escape:'false'})">Export to Excel</button>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="../tableExport.js"></script>
+  <script src="../jquery.base64.js"></script>
+</body>
+</html>
