@@ -210,7 +210,7 @@ THE SOFTWARE.*/
           
           downloadFile(xml, 'plain/text', 'exportData.' + defaults.type);
 
-        }else if(defaults.type == 'excel' || defaults.type == 'doc'|| defaults.type == 'powerpoint'  ){
+        }else if(defaults.type == 'excel' || defaults.type == 'doc'){
           //console.log($(this).html());
           var excel="<table>";
           // Header
