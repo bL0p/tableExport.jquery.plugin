@@ -36,9 +36,15 @@
     </tbody>
   </table>
 
-  <div>
+  <div style="padding-top: 20px">
+    <button onclick="$('#test-table').tableExport({type:'txt', escape:'false'})">Export to Text</button>
     <button onclick="$('#test-table').tableExport({type:'csv', escape:'false'})">Export to CSV</button>
+    <button onclick="$('#test-table').tableExport({type:'sql', escape:'false'})">Export to SQL</button>
     <button onclick="$('#test-table').tableExport({type:'excel', escape:'false'})">Export to Excel</button>
+    <button onclick="$('#test-table').tableExport({type:'doc', escape:'false'})">Export to Word</button>
+    <button onclick="$('#test-table').tableExport({type:'json', escape:'false'})">Export to JSON</button>
+    <button onclick="$('#test-table').tableExport({type:'xml', escape:'false'})">Export to XML</button>
+    <button onclick="$('#test-table').tableExport({type:'pdf', escape:'false'})">Export to PDF</button>
   </div>
   
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
