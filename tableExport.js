@@ -282,9 +282,6 @@ THE SOFTWARE.*/
           } else if(defaults.type == 'doc') {
             fileType = 'application/msword';
             fileExtension = 'doc';
-          } else if(defaults.type == 'powerpoint') {
-            fileType = 'application/vnd.ms-powerpoint';
-            fileExtension = 'ppt';
           }
           downloadFile(excelFile, fileType, 'exportData.' + fileExtension);
           
